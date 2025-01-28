@@ -18,16 +18,14 @@ public class Exercise24 {
 
     public static void printAndEmptyQueue(Queue<String> queue) {
 
-        while (!queue.isEmpty())    //cuando la cola no está vacía
+        while (!queue.isEmpty()) {    //cuando la cola no está vacía
             System.out.println(queue.poll());   //esto recupera y elimina la cabeza de la cola
-
+        }
     }
 
     public static void main(String[] args) {
 
-        Queue<String> queue = createQueue();
-
-        printAndEmptyQueue(queue);
+        printAndEmptyQueue(createQueue());
     }
 
 }
